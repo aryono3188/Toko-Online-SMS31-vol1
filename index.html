@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayur Mayur Segar 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="img/logo sms31.png" class="img1">
+        <img src="img/logo sms31.png" class="img2">
+        <h2>Sayur Mayur Segar 31</h2>
+        <p>Tersedia Berbagai Macam Jenis Produk Sayuran Segar</p>
+    </div>
+    
+    <div class="nav-menu">
+        <ul class="menu">
+            <li class="menu1"><a href="index.html" class="menu2">Home</a></li>
+            <li class="menu1"><a href="menu/product.html" class="menu2">Product</a></li>
+            <li class="menu1"><a href="menu/info.html" class="menu2">Info</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper-content">
+        <h2 id="h1">Selamat Datang di Toko Online Sayur Mayur Segar 31</h2>
+        <p id="p1">Website ini menyediakan kebutuhan Sayur Mayur Segar dengan kualitas yang sangat baik,
+           untuk memudahkan masyarakat dalam memenuhi kebutuhan akan sayuran yang segar.
+        </p>
+        <img class="img" src="img/sayur mayur.jpg">
+    </div>
+
+    <div class="footer">
+        support by <a href="">Junior Programmer </a>,
+        <a href="">Copyright &copy; Desember 2022 by Haryono. – All Right Reserved</a>
+        <p id="demo"></p>
+        <script>
+            var d = Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+        <script>
+            date = new Date();
+            millisecond = date.getMilliseconds();
+            detik = date.getSeconds();
+            menit = date.getMinutes();
+            jam = date.getHours();
+            arrhari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+            hari = date.getDay();
+            tanggal = date.getDate();
+            arrbulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+            bulan = date.getMonth();
+            tahun = date.getFullYear();
+            document.write(arrhari[hari] + "," + tanggal + "-" + arrbulan[bulan] + "-" + tahun + ". " + jam + " : " + menit + " : " + detik + "." + millisecond);
+        </script>
+    </div>
+
+</body>
+</html>
