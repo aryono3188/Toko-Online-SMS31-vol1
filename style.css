@@ -16,14 +16,13 @@ body {
     margin-left: 280px;
 }
 .nav-menu{
-    margin-left:0vh;
+    margin-left: 47vh;
 }
 .menu {
     list-style-type: none;
     width: 910px;
     margin-top: 10px;
     padding: 0px;
-    margin-left: 215px;
     overflow: hidden;
     background-color: coral;
 }
@@ -156,4 +155,9 @@ a:hover {
     background-color: whitesmoke;
     border: 3px outset black;
     text-align: center;
+}
+@media (max-width: 1150px) {
+    .nav-menu{
+        margin-left: 23vh;
+    }
 }
