@@ -15,6 +15,9 @@ body {
 .header p {
     margin-left: 280px;
 }
+.nav-menu{
+    margin-left:0vh;
+}
 .menu {
     list-style-type: none;
     width: 910px;
