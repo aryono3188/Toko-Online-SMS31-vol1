@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayur Mayur Segar 31</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../script.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="../img/logo sms31.png" class="img1">
+        <img src="../img/logo sms31.png" class="img2">
+        <h2>Sayur Mayur Segar 31</h2>
+        <p>Tersedia Berbagai Macam Jenis Produk Sayuran Segar</p>
+
+    </div>
+
+    <div class="nav-menu">
+        <ul class="menu">
+            <li class="menu1"><a href="../index.html" class="menu2">Home</a></li>
+            <li class="menu1"><a href="product.html" class="menu2">Product</a></li>
+            <li class="menu1"><a href="info.html" class="menu2">Info</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper-info">
+        <h2 id="h1">Info Sayur Mayur Segar 31</h2>
+        <div>
+            <img src="../img/manfaat-sayuran.png" alt="" class="img3">
+            <img src="../img/manfaat-sayuran2.png" alt="" class="img4">
+        </div>
+        <video class="video" controls>
+            <source src="../video/Manfaat Makan Sayur dan Buah Buahan setiap Hari.mp4" type="video/mp4">
+        </video>
+        <p style="text-align: center; font-style: italic;">Sumber Video dari Youtube</p>
+    </div>
+
+    <div>
+        <button id="btn" onclick="topFunction()">To Top</button>
+    </div>
+
+    <div class="footer">
+        support by <a href="">Junior Programmer </a>,
+        <a href="">Copyright &copy; Desember 2022 by Haryono. – All Right Reserved</a>
+        <p id="demo"></p>
+        <script>
+            var d = Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+        <script>
+            date = new Date();
+            millisecond = date.getMilliseconds();
+            detik = date.getSeconds();
+            menit = date.getMinutes();
+            jam = date.getHours();
+            arrhari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+            hari = date.getDay();
+            tanggal = date.getDate();
+            arrbulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+            bulan = date.getMonth();
+            tahun = date.getFullYear();
+            document.write(arrhari[hari] + "," + tanggal + "-" + arrbulan[bulan] + "-" + tahun + ". " + jam + " : " + menit + " : " + detik + "." + millisecond);
+        </script>
+    </div>
+
+</body>
+
+</html>
